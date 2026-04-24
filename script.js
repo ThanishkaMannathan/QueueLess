@@ -58,7 +58,7 @@ function checkTurn() {
         document.getElementById("notify").innerText += 
         "\n🔔 It's your turn, " + userName + "!";
 
-        fetch("http://127.0.0.1:5000/send", {
+        fetch("/send", {
             method: "POST",
             headers: {
                 "Content-Type": "application/x-www-form-urlencoded"
