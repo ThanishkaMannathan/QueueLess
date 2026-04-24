@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>QueueLess</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>QueueLess</h1>
+
+    <div class="card">
+        <p>Your Token</p>
+        <h2 id="token">-</h2>
+
+        <p>Now Serving</p>
+        <h2 id="current">A0</h2>
+
+        <p>Estimated Wait</p>
+        <h3 id="wait">0 mins</h3>
+    </div>
+
+    <!-- USER INPUT -->
+    <input type="text" id="name" value="Thanishka">
+    <input type="text" id="phone" value="+917708772085">
+
+    <br><br>
+
+    <button onclick="getToken()">Get Token</button>
+    <button onclick="nextToken()">Next</button>
+
+    <pre id="notify"></pre>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
